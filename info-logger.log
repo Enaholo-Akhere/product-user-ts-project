@@ -1,0 +1,53 @@
+{"level":"info","message":"app is running again","timestamp":"2023-06-23T21:25:25.290Z"}
+{"level":"info","message":"connected to BD","timestamp":"2023-06-23T21:25:25.359Z"}
+{"level":"error","message":"failed to Connect server is not a function","stack":"TypeError: server is not a function\n    at /Users/user/Documents/Techs/ts-product-api/src/start/db-connect.ts:10:9\n    at Generator.next (<anonymous>)\n    at fulfilled (/Users/user/Documents/Techs/ts-product-api/src/start/db-connect.ts:5:58)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2023-06-23T21:25:25.477Z"}
+{"level":"info","message":"app is running again","timestamp":"2023-06-23T21:25:28.940Z"}
+{"level":"info","message":"connected to BD","timestamp":"2023-06-23T21:25:28.960Z"}
+{"level":"error","message":"failed to Connect server is not a function","stack":"TypeError: server is not a function\n    at /Users/user/Documents/Techs/ts-product-api/src/start/db-connect.ts:10:9\n    at Generator.next (<anonymous>)\n    at fulfilled (/Users/user/Documents/Techs/ts-product-api/src/start/db-connect.ts:5:58)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2023-06-23T21:25:28.966Z"}
+{"level":"info","message":"app is running again","timestamp":"2023-06-23T21:28:26.998Z"}
+{"level":"info","message":"connected to BD","timestamp":"2023-06-23T21:28:27.035Z"}
+{"level":"error","message":"failed to Connect server is not a function","stack":"TypeError: server is not a function\n    at /Users/user/Documents/Techs/ts-product-api/src/start/db-connect.ts:10:9\n    at Generator.next (<anonymous>)\n    at fulfilled (/Users/user/Documents/Techs/ts-product-api/src/start/db-connect.ts:5:58)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2023-06-23T21:28:27.051Z"}
+{"level":"info","message":"app is running again","timestamp":"2023-06-23T21:29:20.862Z"}
+{"level":"info","message":"connected to BD","timestamp":"2023-06-23T21:29:20.874Z"}
+{"level":"info","message":"app is running again","timestamp":"2023-06-23T21:29:37.874Z"}
+{"level":"info","message":"connected to BD","timestamp":"2023-06-23T21:29:37.900Z"}
+{"level":"info","message":"app is running again","timestamp":"2023-06-23T21:35:09.271Z"}
+{"level":"info","message":"connected to BD","timestamp":"2023-06-23T21:35:09.299Z"}
+{"level":"info","message":"app is running again","timestamp":"2023-06-23T21:35:48.372Z"}
+{"level":"info","message":"connected to BD","timestamp":"2023-06-23T21:35:48.388Z"}
+{"level":"info","message":"app is running again","timestamp":"2023-06-23T21:38:03.990Z"}
+{"level":"info","message":"connected to BD","timestamp":"2023-06-23T21:38:04.004Z"}
+{"level":"info","message":"app is running again","timestamp":"2023-06-23T22:13:00.675Z"}
+{"level":"info","message":"connected to BD","timestamp":"2023-06-23T22:13:00.702Z"}
+{"level":"info","message":"app is running again","timestamp":"2023-06-23T22:14:21.706Z"}
+{"level":"info","message":"connected to BD","timestamp":"2023-06-23T22:14:21.721Z"}
+{"level":"info","message":"app is running again","timestamp":"2023-06-23T22:14:55.561Z"}
+{"level":"info","message":"connected to BD","timestamp":"2023-06-23T22:14:55.588Z"}
+{"level":"info","message":"app is running again","timestamp":"2023-06-23T22:15:10.830Z"}
+{"level":"info","message":"connected to BD","timestamp":"2023-06-23T22:15:10.845Z"}
+{"level":"info","message":"app is running again","timestamp":"2023-06-23T22:16:55.765Z"}
+{"level":"info","message":"connected to BD","timestamp":"2023-06-23T22:16:55.777Z"}
+{"level":"info","message":"app is running again","timestamp":"2023-06-23T22:19:52.393Z"}
+{"level":"info","message":"connected to BD","timestamp":"2023-06-23T22:19:52.405Z"}
+{"level":"info","message":"app is running again","timestamp":"2023-06-23T22:20:33.878Z"}
+{"level":"info","message":"connected to BD","timestamp":"2023-06-23T22:20:33.890Z"}
+{"level":"info","message":"app is running again","timestamp":"2023-06-23T22:20:45.402Z"}
+{"level":"info","message":"connected to BD","timestamp":"2023-06-23T22:20:45.415Z"}
+{"level":"info","message":"app is running again","timestamp":"2023-06-23T22:25:27.441Z"}
+{"level":"info","message":"connected to BD","timestamp":"2023-06-23T22:25:27.465Z"}
+{"level":"info","message":"app is running again","timestamp":"2023-06-23T22:27:59.661Z"}
+{"level":"info","message":"connected to BD","timestamp":"2023-06-23T22:27:59.679Z"}
+{"level":"info","message":"app is running again","timestamp":"2023-06-23T22:29:24.071Z"}
+{"level":"info","message":"connected to BD","timestamp":"2023-06-23T22:29:24.083Z"}
+{"level":"info","message":"app is running again","timestamp":"2023-06-23T22:33:11.373Z"}
+{"level":"info","message":"connected to BD","timestamp":"2023-06-23T22:33:11.386Z"}
+{"level":"info","message":"app is running again","timestamp":"2023-06-23T22:47:09.510Z"}
+{"level":"info","message":"connected to BD","timestamp":"2023-06-23T22:47:09.521Z"}
+{"level":"info","message":"app is running again","timestamp":"2023-06-23T22:47:34.433Z"}
+{"level":"info","message":"connected to BD","timestamp":"2023-06-23T22:47:34.451Z"}
+{"level":"info","message":"app is running again","timestamp":"2023-06-23T22:47:41.244Z"}
+{"level":"info","message":"connected to BD","timestamp":"2023-06-23T22:47:41.259Z"}
+{"level":"info","message":"app is running again","timestamp":"2023-06-23T22:50:03.677Z"}
+{"level":"info","message":"connected to BD","timestamp":"2023-06-23T22:50:03.689Z"}
+{"level":"info","message":"app is running again","timestamp":"2023-06-26T12:27:54.139Z"}
+{"level":"info","message":"connected to BD","timestamp":"2023-06-26T12:27:54.303Z"}
