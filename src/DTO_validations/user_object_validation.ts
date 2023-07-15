@@ -1,18 +1,17 @@
-import Joi from 'joi'
+import { Request, Response, NextFunction } from "express";
+import { AnyZodObject } from "zod";
 
-interface user_interface {
-    name: string;
-    password: string;
-    email: string;
+const validate = (schema: AnyZodObject) => (req: Request, res: Response, next: NextFunction) => {
+    try {
+        schema.parse({
+            body: req.body,
+            query: req.query,
+            params: req.params,
+        });
+        next();
+    }
+    catch (e: any) {
+        return res.status(400).send(e.errors);
+    }
 }
-const validateUser = (user: user_interface) => {
-    const schema = Joi.object({
-        email: Joi.string().email().required(),
-        password: Joi.string().min(5).max(255).required(),
-        name: Joi.string().min(5),
-    })
-
-    return { error, value } = schema.validate(user);
-};
-
-export default validateUser;
+export default validate; 
