@@ -1,6 +1,6 @@
-import { userInterface } from './../models/user.model';
-import Usermodel from '../models/user.model';
+import Usermodel, { userInterface } from '../models/user.model';
 import _ from 'lodash'
+import { FilterQuery } from 'mongoose';
 
 interface validatePasswordInterface {
     email: string;
@@ -10,6 +10,8 @@ interface validatePasswordInterface {
 const createUser = async (input: userInterface) => {
     try {
         const user = new Usermodel(input);
+        await user.save()
+        console.log("new user", user)
         return _.omit(user.toJSON(), ['password'])
     }
     catch (e: any) {
@@ -27,4 +29,9 @@ const validatePassword = async ({ email, password }: validatePasswordInterface) 
     return _.omit(user.toJSON(), ['password'])
 };
 
-export { createUser, validatePassword };
+const findUser = async (query: FilterQuery<userInterface>) => {
+    return await Usermodel.findOne(query).lean();
+}
+
+
+export { createUser, validatePassword, findUser };

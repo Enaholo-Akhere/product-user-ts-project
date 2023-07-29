@@ -2,28 +2,42 @@ export default {
     port: 5000,
     dbUri: "mongodb://localhost:27017/rest-api-tutorial",
     saltWorkFactor: 10,
-    accessTokenTtl: '15m',
-    refreshTokenTtl: '1y',
-    publicKey: `-----Begin Public Key------bc2YyKUUqFmpMP9yFB9qDP.FvZwfWis#qS.6H2do80Zayo4..a
-HAM8sdAbntUUe5RVasDQh6is4NHwgepL@e8@QhX@d9Y.VBOaEd
-p5mzRowHm@ki3iSKiufMsvGkH2cz7TEZh78TY01UNtzQjhWEyd
-bPq10nBcmXEy#CryKdJ52zWXBKs#Oy#jTo9#S.S#GMu7UFOglU
-c1Hx1G@YTejKY2jjqZ2jzsPhPaJp0vipkfjWwOg7LB#HBoehaS
-91fVsB3sweocdPQ8FpAi0TdmR50vNcEe@IMD@19RltPrNF5d9d
-fgn7gm6ebeXGv8z.vKD9nT0dwKo.3qQfNyFMApmYe2z8dY6fMX
-PGjsYbTky3bqxR7biiz4V98MYNGrTeCzh9kmQcRDKSe@qfHnok
-WKe7oUGCK3rMGzLtc.yedT6EJ@#rK@YCCUMPwfolszjAj2Ud4P
-WEmT#5kkdTw3T#t8pIWr4O1YHYNNWKNmvIOEVhy8e.63FQZmgV
------End Public Key`,
-    privateKey: `------Begin Private Key------51UmWszHp#4r3nCEpB@Q2fZmWqFjsSiQw4cYrD3xfEjtBfdJ5s
-SoRJrB9xgMX5BCTsrw9oO3OWLB@hlKkFBCWAgzWEzIwhEtXh92
-EORC@nWcXYmZ@0aEvUDmh3MOekqzaW.Izu@udfKg3VM3m@tkL5
-tfT@duxgM#UI@8X29CyUPIeCEtvv2BDMu7SfDNnFmFdRCZ9FGr
-qdZ4tpHnR3tKrYjPEJCbN5AFk4YBVrGqMFFmXWIjUvZEuZR7yu
-MH2HIs4am0i1bbHjHqFo7jclxwZ24BNQekctm9RgjzzvZgokqH
-5p2G6A5kXsoro8s9SW412g7KKwIWtfTXmbIddda1NR9gPoaPkM
-0zrsSRMJvE@p4UGngnevycdmUyv#N6ARSOcPesV0j0V@mmho4K
-mxwx2PYDH84IIpgns211E8B@O8f2iVAHODwcOeKTJ1JexYW6XA
-Sc0l2Z3hLJrHpYnuWGLS1DYeA8DciD0LJmCD4f5yNfkCkjR2kU
------End Private Key`
+    accessTokenTtl: '1d',
+    refreshTokenTtl: '5d',
+    publicKey: `-----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnErZbtzX6O8cNItG+S7M
+/bJjexhyAWYUS3na4F0Jnaq51FdpUrhMe93rm9Wj1li7TxgtaJGP6d+WbwfOxisP
+PIK/PlfO9GWF/GbRKYOS4Ww4hP+oGxm5CMJ57dh7Ez8YeAkE0PG/eoDpT+/Xz6zP
+BaDaGGM8t61j7XyNQUlX5uoXvBnhkDzCtPmRQRsEO8uXndq5vCGupqzv4HqvVouD
+7XDxK7tr43ZHiFAMeuC0U773roIPv8VcfY7f/k41MhzYaz45wpplz7ZontO9qS/j
+fJ7JsH61Ar1XLHNOp4c6/BbD6NJ/hyf/ajLVl6SqEfustaHc6TZY5OPD2Qy2xnI9
+CQIDAQAB
+-----END PUBLIC KEY-----`,
+    privateKey: `-----BEGIN RSA PRIVATE KEY-----
+MIIEpAIBAAKCAQEAnErZbtzX6O8cNItG+S7M/bJjexhyAWYUS3na4F0Jnaq51Fdp
+UrhMe93rm9Wj1li7TxgtaJGP6d+WbwfOxisPPIK/PlfO9GWF/GbRKYOS4Ww4hP+o
+Gxm5CMJ57dh7Ez8YeAkE0PG/eoDpT+/Xz6zPBaDaGGM8t61j7XyNQUlX5uoXvBnh
+kDzCtPmRQRsEO8uXndq5vCGupqzv4HqvVouD7XDxK7tr43ZHiFAMeuC0U773roIP
+v8VcfY7f/k41MhzYaz45wpplz7ZontO9qS/jfJ7JsH61Ar1XLHNOp4c6/BbD6NJ/
+hyf/ajLVl6SqEfustaHc6TZY5OPD2Qy2xnI9CQIDAQABAoIBACYgzHKTRcj5rDPV
+Vncrx66MemBpUkatFH5lN9RMXjAsmjEHMhaQB3igZv4ZXGLKOsfM6ib8e9NeTGDB
+0tvdXVYxv14CJebRbaJpotUx1/9OW2t2wxf5an6MkxpHGZ9UYS/HY3llwISuNjze
+EhQD4G1LFGmmrAVTM3GYVQ18Swl16D4E/l2Ro4mre4erH56Ix1uHX5VmZLF9SwBY
+GXOHLfqzj3rxCrXvlcIJsvsirt1yKtW7BKdDxdZlXHCV76i4TQeqjgpomUieaLhA
+hC5VDYhZEZQryJIeFl9EuQCy/TfBhXy2Q8HAxkSpqc3rDnhqRjC8i7RTa/5wb/7z
+RQn/2AECgYEA3dKWW7fLjO5AdWvs86Au6nopiGd3ahDPp4Y6d31LofT8NyUpXELb
+pgA7s6ffMW2LQ1yKv7ExvuxOHDCktqa6eif7Pn1DlBGnzoWk9xiG8H+cPK8rEmaV
+wie6vEP0dxH/VSsiZvXPQQnw68Vz94AxmYWpPnvRidOy/R/OSaSAT0kCgYEAtF+I
+1SjzVoQQlEGy6XKtz5ejsVmxeMlTw32eqQcIpi8AD2z5marQoN121icjbLyN4SfK
+9Awizyt+VWrcqi7FfI7YUHB3GrzYVPKriMbz85s7I28ls2yWojDM70zFt4JamVx3
+iLcwxv/dxEus8csZtYA+XDAMvNkDdI9N3K8Xv8ECgYEArGApV7zMAQhkLttflzKz
+QqMMA2Pj+Bh4RcaZSKGlVIX8OR43tep+pdEok8OwPcjSn9YaPDyGW8dmK6HhXc7S
+unq3Uygki7vsmyBfwWTd96Yy0zWMUxBE8EvPYN2t65mgwZ5zbW83T2NaRN178Kk9
+4f9sNZIikuhf/zPoKnIbA4ECgYAtSm/JVmcDqlWfZH/QLoOGRMVNmv/9HFB0He7g
+8msxj0usk+h4tXN9cR6N13YFr7LQfnVvojx7WKh4OkT+VpAwHo4iZJsDk7eeXPDF
+f29yE+BdnWMSEoogX7CVxek/kvO83oMFSTpuPYEp8PaUIDNsZ69A5q/MG5HKitE6
+QJzuAQKBgQCLz6GMj2pPqTFUPoXRVF+u6cwvq0aBAxTq8zl1bUxCAlvGiEJoSK9z
+pFJqMwLW9WSk+aRODQI8uU5vSdzjAgXvDsNksUQssa62aOtlqMdsQ4zENEg6ObI2
+WDo1IqGiRE9534uwnfyc644W9mZ6b8lQmjNtNzPju5kxgCjX8uuRzA==
+-----END RSA PRIVATE KEY-----`
 }
