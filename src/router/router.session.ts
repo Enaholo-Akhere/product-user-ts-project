@@ -1,14 +1,10 @@
 import express, { Request, Response } from 'express';
 const router = express.Router();
-import Joi from 'joi'
-import validateUser from '../DTO_validations/user_object_validation';
-import { winston_logger } from '../utils/logger';
-import { zod, zodObj } from '../DTO_validations/user.zod.validation';
 import createUserHandler from '../controller/user-controller';
 import validate from '../DTO_validations/user_object_validation';
 import { createUserSchema } from '../schema/user.schema';
 import { createUserSessionHandler, deleteSessionHandler, getUserSessionsHandler } from '../controller/session.controller';
-import { createSessionSchema } from '../schema/sesson.schema';
+import { createSessionSchema } from '../schema/session.schema';
 import requireUser from '../middleware/requireUser';
 
 
