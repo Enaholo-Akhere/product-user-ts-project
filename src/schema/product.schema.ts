@@ -1,11 +1,20 @@
 import { string, object, TypeOf, number } from 'zod';
 
-const payload = {
+const createPayload = {
     body: object({
         title: string({ required_error: "Title is required" }),
         description: string({ required_error: "description is required" }).min(120, "Description should be at least 120 characters long"),
         price: number({ required_error: "price is required" }),
         image: string({ required_error: "image is required" }),
+    })
+};
+
+const updatePayload = {
+    body: object({
+        title: string({ required_error: "Title is required" }).optional(),
+        description: string({ required_error: "description is required" }).min(120, "Description should be at least 120 characters long").optional(),
+        price: number({ required_error: "price is required" }).optional(),
+        image: string({ required_error: "image is required" }).optional(),
     })
 };
 
@@ -18,12 +27,12 @@ const params = {
 }
 
 export const createProductSchema = object({
-    ...payload,
+    ...createPayload,
 });
 
 export const updateProductSchema = object(
     {
-        ...payload,
+        ...updatePayload,
         ...params
     });
 

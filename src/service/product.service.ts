@@ -13,7 +13,7 @@ const createProduct = async (input: FilterQuery<Omit<ProductDocument, 'createdAt
 };
 
 const findProduct = async (query: FilterQuery<ProductDocument>, options: QueryOptions = { lean: true }) => {
-    return await ProductModel.findOne(query, {}, options);
+    return await ProductModel.findOne(query);
 
 };
 

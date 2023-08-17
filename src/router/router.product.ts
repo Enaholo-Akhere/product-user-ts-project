@@ -7,8 +7,8 @@ import { createProductHandler, deleteProductHandler, getProductHandler, updatePr
 
 
 router.post('/api/products', [requireUser, validate(createProductSchema)], createProductHandler);
-router.put('/api/products', [requireUser, validate(updateProductSchema)], updateProductHandler);
-router.get('/api/products', validate(getProductSchema), getProductHandler);
-router.delete('/api/products', [requireUser, validate(deleteProductSchema)], deleteProductHandler);
+router.patch('/api/products/:productId', [requireUser, validate(updateProductSchema)], updateProductHandler);
+router.get('/api/products/:productId', validate(getProductSchema), getProductHandler);
+router.delete('/api/products/:productId', [requireUser, validate(deleteProductSchema)], deleteProductHandler);
 
 export default router;
