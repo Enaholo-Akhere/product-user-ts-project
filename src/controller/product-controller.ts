@@ -26,7 +26,7 @@ const updateProductHandler = async (req: Request<UpdateProductInput['params']>, 
 
     if (!product) { return res.sendStatus(404) };
 
-    if (product.user !== userId) {
+    if (String(product.user) !== userId) {
         return res.sendStatus(403);
     }
 
@@ -34,9 +34,9 @@ const updateProductHandler = async (req: Request<UpdateProductInput['params']>, 
     return res.send(updatedProduct);
 };
 
-const getProductHandler = (req: Request<GetProductInput["params"]>, res: Response) => {
+const getProductHandler = async (req: Request<GetProductInput["params"]>, res: Response) => {
     const productId = req.params.productId;
-    const product = findProduct({ productId })
+    const product = await findProduct({ productId })
     if (!product) { return res.sendStatus(404) };
 
     return res.send(product);
@@ -50,7 +50,7 @@ const deleteProductHandler = async (req: Request, res: Response) => {
 
     if (!product) { return res.sendStatus(404) };
 
-    if (product.user !== userId) {
+    if (String(product.user) !== userId) {
         return res.sendStatus(403);
     }
 

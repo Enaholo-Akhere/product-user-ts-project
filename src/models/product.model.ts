@@ -7,10 +7,10 @@ const crypto_id = randomUUID().slice(0, 10)
 export interface ProductDocument {
     user: mongoose.Schema.Types.ObjectId,
     productId: mongoose.Schema.Types.ObjectId,
-    title: string,
-    description: string,
-    price: number,
-    image: string,
+    title?: string,
+    description?: string,
+    price?: number,
+    image?: string,
     createdAt: Date,
     updatedAt: Date,
 }
